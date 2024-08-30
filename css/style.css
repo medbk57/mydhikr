@@ -1,0 +1,428 @@
+/*  Google Fonts (Cairo)  */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+}
+
+body {
+    background-color: #F7F7F7;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  HEADER  */
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: #f7f7f7;
+    z-index: 1001;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header .logo {
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    color: #179BAE;
+}
+
+header .moon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header .moon:hover {
+    color: #179BAE;
+}
+
+.scrolled {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*  Main  */
+.container {
+    width: 100%;
+    padding: 80px 120px 0;
+}
+
+.container .aya {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-menu {
+    width: 300px;
+    position: relative;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.select-menu .select-btn i {
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.select-menu.show .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    margin-top: 5px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.select-menu .option {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.select-menu .option:hover {
+    background: #F2F2F2;
+}
+
+.select-menu.show .options {
+    display: block;
+}
+
+.content input {
+    border: 1.5px solid #179BAE;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 17px;
+    height: 60px;
+    width: 250px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content input:focus {
+    outline: 1.5px solid #179BAE;
+}
+
+.content button {
+    background-color: #179BAE;
+    color: #fff;
+    padding: 1px 15px;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content button:hover {
+    background-color: #1FBAC9;
+}
+
+/* --------------------------------------------- */
+.subhah-container {
+    width: 100%;
+    padding: 40px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subhah-container .subhah {
+    border: 2px solid #179BAE;
+    border-radius: 5px;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subhah-container .subhah-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.subhah-container .subhah .cercle {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: #179BAE;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.subhah-container .subhah .subhah-btns {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.subhah-container .subhah .subhah-btns button {
+    background-color: #179BAE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0px 5px;
+}
+
+.subhah-container .subhah .subhah-btns button:active {
+    background-color: #1FBAC9;
+}
+
+.tip {
+    margin: 0 0 50px 0;
+}
+
+hr {
+    margin: 10px 120px;
+}
+
+/*  FOOTER  */
+footer {
+    padding: 20px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social-media a {
+    color: #333;
+    margin: 0 5px;
+}
+
+footer .social-media a i {
+    font-size: 23px;
+}
+
+footer .social-media a i:hover {
+    color: #179BAE;
+}
+
+/*  Media Queries  */
+@media (max-width: 786px) {
+    header {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 100px 20px 40px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select-menu {
+        margin-bottom: 15px;
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+    .select-menu,
+    .content input,
+    .content button {
+        width: 300px;
+    }
+
+    .subhah-container {
+        padding: 50px 20px 0;
+    }
+
+    .subhah-container .subhah {
+        width: 300px;
+    }
+
+    .subhah-container .subhah-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subhah-container .subhah .subhah-btns {
+        flex-direction: column;
+    }
+
+    .subhah-container .subhah .subhah-btns button {
+        margin: 0 0 10px 0;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .tip {
+        margin: 30px 20px 0;
+    }
+
+    hr {
+        margin: 0 40px 10px;
+    }
+
+    footer {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    footer .copyright {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+}
+
+/*  */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*  Adjusting header padding and font size for medium screens  */
+    header {
+        padding: 20px 40px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    /*  Adjusting container padding for medium screens  */
+    .container {
+        padding: 80px 40px 40px;
+    }
+
+    /*  Adjusting content layout for medium screens  */
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select-menu,
+    .content input,
+    .content button {
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    /*  Adjusting Subhah container layout for medium screens  */
+    .subhah-container {
+        padding: 40px 40px 0;
+    }
+
+    .subhah-container .subhah {
+        width: 350px;
+    }
+
+    .subhah-container .subhah-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subhah-container .subhah .subhah-btns {
+        flex-direction: column;
+    }
+
+    .subhah-container .subhah .subhah-btns button {
+        margin-bottom: 10px;
+        width: 250px;
+        font-size: 16px;
+    }
+
+    /*  Adjusting tip section margin for medium screens  */
+    .tip {
+        margin: 30px 40px 0;
+    }
+
+    hr {
+        margin: 0 40px 10px;
+    }
+
+    /*  Adjusting footer layout for medium screens  */
+    footer {
+        padding: 10px 40px;
+        flex-direction: column;
+    }
+
+    footer .copyright {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/*  Dark Mode  */
+body.dark-mode {
+    background-color: #1d232f;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header.dark-mode {
+    background-color: #1d232f;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.aya.dark-mode {
+    color: #fff;
+}
+
+footer .social-media a.dark-mode {
+    color: #fff;
+}
+
+.select-menu.dark-mode {
+    color: #333;
+}
